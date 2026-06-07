@@ -1,0 +1,77 @@
+/* Task List Container */
+.main-container {
+  margin: 40px auto;
+  padding: 0 100px;
+}
+
+/* Header Row (title + count) */
+.task-list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.title {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: #f1f5f9;
+  letter-spacing: -0.03em;
+}
+
+.task-count {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #7c3aed;
+  background: rgba(124, 58, 237, 0.15);
+  padding: 4px 12px;
+  border-radius: 20px;
+  border: 1px solid rgba(124, 58, 237, 0.3);
+}
+
+/* Filter Tabs */
+.filter-tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 24px;
+  background: #1a1a24;
+  padding: 6px;
+  border-radius: 12px;
+  width: fit-content;
+}
+
+.filter-tabs button {
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #94a3b8;
+  transition: all 0.2s ease;
+}
+
+.filter-tabs button:hover {
+  color: #e2e8f0;
+}
+
+.filter-tabs button.active {
+  background: #7c3aed;
+  color: #ffffff;
+}
+
+/* Task list */
+.tasks {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+/* Empty state */
+.empty {
+  text-align: center;
+  color: #475569;
+  font-size: 1rem;
+  margin-top: 30px;
+  padding: 40px;
+  border: 2px dashed #1e1e2e;
+  border-radius: 16px;
+}

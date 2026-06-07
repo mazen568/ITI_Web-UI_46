@@ -1,0 +1,135 @@
+.skeleton {
+  background: #1e293b;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+  animation: pulse 1.8s ease-in-out infinite;
+}
+
+.skeleton::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.05),
+    transparent
+  );
+  transform: translateX(-100%);
+  animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    background-color: #1e293b;
+  }
+  50% {
+    background-color: #334155;
+  }
+}
+
+.skeleton-card {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  backdrop-filter: blur(5px);
+}
+
+.image {
+  height: 200px;
+  width: 100%;
+  border-radius: 0;
+}
+
+.content {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.title {
+  height: 28px;
+  width: 85%;
+  background: linear-gradient(90deg, #334155, #475569);
+}
+
+.text {
+  height: 14px;
+  width: 100%;
+}
+
+.text_short {
+  height: 14px;
+  width: 60%;
+}
+
+/* Generic types */
+.circle {
+  border-radius: 50%;
+}
+
+.thumbnail {
+  aspect-ratio: 1/1;
+  width: 100%;
+}
+
+/* Slider Skeleton */
+.skeleton-slider {
+  width: 100%;
+  height: 450px;
+  background-color: rgba(255, 255, 255, 0.03);
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.slider_image {
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+}
+
+.slider_content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px;
+  background: linear-gradient(transparent, rgba(15, 23, 42, 0.9));
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.featured_badge {
+  width: 120px;
+  height: 20px;
+  border-radius: 4px;
+}
+
+.slider_title {
+  width: 70%;
+  height: 36px;
+  margin-bottom: 8px;
+}
+
+.slider_text {
+  width: 90%;
+  height: 16px;
+}

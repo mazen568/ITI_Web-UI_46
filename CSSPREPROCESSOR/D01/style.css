@@ -1,0 +1,42 @@
+.main .main-title {
+  color: #3498db;
+}
+.main .main-subtitle {
+  color: #777;
+}
+.main .main-btn {
+  background-color: #3498db;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+}
+.main .main-btn:hover {
+  background-color: #777;
+}
+
+.font-18px {
+  font-size: 18px;
+}
+
+.font-16px {
+  font-size: 16px;
+}
+
+.font-14px {
+  font-size: 14px;
+}
+
+.finish-btn {
+  width: 100%;
+  padding: 10px;
+}
+@media (min-width: 576px) {
+  .finish-btn {
+    width: 50%;
+  }
+}
+@media (min-width: 768px) {
+  .finish-btn {
+    width: 25%;
+  }
+}/*# sourceMappingURL=style.css.map */

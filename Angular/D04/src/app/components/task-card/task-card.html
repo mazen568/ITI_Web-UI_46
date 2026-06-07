@@ -1,0 +1,32 @@
+<div class="task-card" [class.completed]="task.completed">
+
+  <!-- Task Info -->
+  <div class="task-content">
+    <span class="task-title">{{ task.title }}</span>
+    <p class="task-desc">{{ task.description }}</p>
+    <div class="task-meta">
+      <span class="badge priority">{{ task.priority }} .</span>
+      <span class="badge">{{ task.dueDate }} .</span>
+      <span class="badge">{{ task.category }}</span>
+    </div>
+  </div>
+
+  <!-- Action Buttons -->
+  <div class="actions">
+
+    <button class="btn-action btn-complete" (click)="selectOperation('toggle')" [title]="task.completed ? 'Undo' : 'Complete'">
+      <app-icon [name]="task.completed ? 'undo' : 'check'" />
+    </button>
+
+    <button class="btn-action btn-delete" (click)="selectOperation('delete')" title="Delete">
+      <app-icon name="trash" />
+    </button>
+
+    @if (!task.completed) {
+      <button class="btn-action btn-edit" (click)="selectOperation('edit')" title="Edit">
+        <app-icon name="edit" />
+      </button>
+    }
+
+  </div>
+</div>

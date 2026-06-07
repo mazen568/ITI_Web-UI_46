@@ -1,0 +1,43 @@
+.post-card {
+  background-color: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.post-header {
+  font-size: 0.8rem;
+  color: #94a3b8;
+}
+
+.post-author {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.post-title {
+  font-size: 1.1rem;
+  color: #ffffff;
+}
+
+.post-content {
+  font-size: 0.9rem;
+  color: #cbd5e1;
+  line-height: 1.4;
+}
+
+.post-footer {
+  margin-top: 10px;
+  font-size: 0.8rem;
+  color: #94a3b8;
+}
+
+.post-action {
+  display: inline-block;
+  padding: 4px 8px;
+  background-color: #334155;
+  border-radius: 4px;
+}

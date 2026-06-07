@@ -1,0 +1,15 @@
+body {
+  background-color: red;
+}
+.parent:hover {
+  background-color: green;
+}
+.box-elem {
+  font-size: 100px;
+  background-color: red;
+  background-color: green;
+}
+body {
+  background-color: black;
+  background-color: white;
+}

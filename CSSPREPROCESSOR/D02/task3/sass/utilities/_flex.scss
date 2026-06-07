@@ -1,0 +1,30 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+@each $breakpoint, $value in $breakpoints {
+  @include respond-to($breakpoint) {
+    .flex-#{$breakpoint}-column {
+      flex-direction: column;
+    }
+
+    .flex-#{$breakpoint}-row {
+      flex-direction: row;
+    }
+  }
+}

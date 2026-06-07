@@ -1,0 +1,58 @@
+<!-- <p class="bg" [ngClass]="['c','border']">hello</p>
+<p class="bg" [class]="['c','border']">hello</p>
+<br>
+<p class="bg" [ngClass]="['c border']">hello</p>
+<p class="bg" [class]="['c border']">hello</p> -->
+<!-- in class binding when having a space inisde the array 
+ it ignores it -->
+ <!-- 3ks el ng class btsht8l be spaces 3ady -->
+
+ 
+ <!-- <input #input1 type="text" value="1">
+ <input #input2 type="text" value="2">
+ <input #input3 type="text" value="3"> -->
+
+
+ <!-- <button (click)="getInputs([input1,input2])">get inputs</button> -->
+
+ 
+ <!-- <button (click)="show=!show">{{show?"hide":"show"}}</button> -->
+<!-- <ng-template [ngIf]="show">
+ <p>Lorem ispum dolor sit amet.</p>
+ <p>Lorem ispum dolor sit amet.</p>
+ <p>Lorem ispum dolor sit amet.</p>
+</ng-template> -->
+<!-- <p *ngIf="show">Lorem ispum dolor sit amet.</p>  -->
+<!-- de ashl mn ng template 3shan ng template adeema
+hya btshkhdm ng template internally 3shan lw 3mlt inspect htla2y 
+el comment el esmo container 
+-->
+
+
+<!-- h2nk 3mlt to.String() -->
+<!-- <p>
+  {{stdArr}}
+</p> -->
+
+
+<!-- ngFor => for of -->
+
+
+
+<!-- index first last even odd count-->
+<!-- <div *ngFor="let std of stdArr; index as idx ; first as f; last as l" [class.bg]="f" trackBy:trackByFn> -->
+  <!-- trackby enables the elements to be not created again(only the changed ones) -->
+  <!-- <p>index: {{idx}}</p> -->
+  <!-- <p>id: {{std.id}}</p> -->
+ <!-- <p>name: {{std.fname+ ' ' + std.lname}}</p> -->
+<!-- </div> -->
+
+
+<!-- @for(std of stdArr; track std.id){
+  <p>index :{{$index}}</p>
+   <p>id: {{std.id}}</p>
+ <p>name: {{std.fname+ ' ' + std.lname}}</p>
+} -->
+
+<h1 class="text-white bg-warning bg-gradient p-3 m-2 rounded-2 text-center">APP ROOT COMP</h1>
+<app-form><app-form/>

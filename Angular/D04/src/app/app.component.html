@@ -1,0 +1,16 @@
+<app-header> </app-header>
+<app-home> </app-home>
+<app-task-input [task]="selectedTask" (taskAdded)="onTaskAdded($event)"></app-task-input>
+<app-task-list [tasks]="tasks" (performOperation)="onPerformOperation($event)" >
+</app-task-list>
+
+<div class="notification-container">
+  @for (notif of notifications; track notif.id) {
+    <app-notification 
+      [message]="notif.message" 
+      [type]="notif.type" 
+      (close)="removeNotification(notif.id)">
+    </app-notification>
+  }
+</div>
+<app-footer> </app-footer>

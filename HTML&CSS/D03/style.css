@@ -1,0 +1,9 @@
+input.c1:valid{
+    background-color: chartreuse;
+}
+input.c1:valid+span{
+   display: none;
+}
+input.c1:invalid+span{
+   display: inline;
+}

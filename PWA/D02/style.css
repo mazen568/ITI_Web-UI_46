@@ -1,0 +1,169 @@
+:root {
+  --primary: #2ecc71;
+  --primary-dark: #27ae60;
+  --bg-gradient: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  --white: #ffffff;
+  --text: #2d3436;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+html {
+  font-size: 62.5%; 
+  background: var(--bg-gradient);
+}
+
+body {
+  width: 90%;
+  max-width: 600px;
+  background: var(--white);
+  margin: 4rem auto;
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+  padding-bottom: 2rem;
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 3.2rem;
+  padding: 3rem 0;
+  margin: 0;
+  text-align: center;
+  background: var(--primary);
+  color: white;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+h2 {
+  font-size: 2rem;
+  color: var(--text);
+  margin-bottom: 2rem;
+}
+
+.form-box {
+  padding: 2.5rem;
+  margin: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.taskform {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.taskform label {
+  display: block;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+  color: #636e72;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+  width: 100%;
+  padding: 1.2rem;
+  border: 2px solid #dfe6e9;
+  border-radius: 12px;
+  font-size: 1.6rem;
+  transition: border-color 0.3s ease;
+  outline: none;
+}
+
+input:focus, select:focus {
+  border-color: var(--primary);
+}
+
+.full-width, .half-width, .third-width {
+  width: 100% !important; 
+  float: none !important;
+}
+
+/* Layout Grid for Desktop */
+@media (min-width: 480px) {
+  .taskform {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .full-width { grid-column: span 6; }
+  .half-width { grid-column: span 3; }
+  .third-width { grid-column: span 2; }
+}
+
+/* Buttons */
+#AddTask, #enableNotify {
+  grid-column: span 6;
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 1.5rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.2s;
+  box-shadow: 0 4px 15px rgba(46, 204, 113, 0.3);
+  text-shadow: none;
+  margin-top: 1rem;
+}
+
+#AddTask:hover {
+  background: var(--primary-dark);
+  transform: translateY(-2px);
+}
+
+#enableNotify {
+  display: block;          
+  width: 100%;             
+  max-width: 400px;       
+  margin: 2rem auto;      
+  background: #0984e3;
+  color: white;
+  border: none;
+  padding: 1.5rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.2s;
+  box-shadow: 0 4px 15px rgba(9, 132, 227, 0.3);
+}
+
+
+
+/* Task List Styling */
+.task-box {
+  width: 100%;
+  padding: 0 2.5rem;
+}
+
+#results h2 {
+  background: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 12px;
+  border-left: 5px solid var(--primary);
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+#results span {
+  background: #ff7675;
+  color: white;
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  text-transform: uppercase;
+}

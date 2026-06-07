@@ -1,0 +1,19 @@
+<div class="users-container">
+
+    <h2 class="title">Users</h2>
+  
+    <div class="cards">
+  @for(user of users; track user.id ){
+        <div class="card">
+            <h3>User #{{user.id}}</h3>
+    
+            <p><strong>ID:</strong> {{user.id}}</p>
+            <p><strong>Name:</strong> {{user.name}}</p>
+            <p><strong>Description:</strong> {{user.description}}</p>
+    
+            <a [routerLink]="[user.id]">View Profile</a>
+        </div>
+  }  
+    </div>
+  
+  </div>

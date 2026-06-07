@@ -1,0 +1,42 @@
+body{
+    background-color: red;
+}
+
+@color:red;
+
+.parent{
+  .child{}
+  &:hover{
+    background-color: green;
+  }
+
+}
+
+.box(@font:10px,@color:red){
+    font-size: @font;
+    background-color: @color;
+}
+
+.box-elem{
+    .box(100px);
+    background-color: green;
+}
+
+#Theme(@flag:true){
+    body{
+        background-color: if(@flag,black,white);
+        background-color: if(@flag,white,black);
+
+    }
+}
+
+#Theme();
+
+// guard
+.size(@width) when (@width > 100px){
+    width: @width/2;
+}
+
+.size-elem{
+    .size(20 0)
+}

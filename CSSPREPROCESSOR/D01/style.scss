@@ -1,0 +1,45 @@
+@use "variables" as *;
+
+.main {
+  .main-title {
+    color: $primary;
+  }
+
+  .main-subtitle {
+    color: $secondary;
+  }
+
+  .main-btn {
+    background-color: $primary;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+
+    &:hover {
+      background-color: $secondary;
+    }
+  }
+}
+
+
+$fonts: 18px, 16px, 14px;
+
+@each $size in $fonts {
+  .font-#{$size}{
+    font-size: $size;
+  }
+}
+
+
+.finish-btn {
+  width: 100%;
+  padding: 10px;
+
+  @media (min-width: 576px) {
+    width: 50%;
+  }
+
+  @media (min-width: 768px) {
+    width: 25%;
+  }
+}

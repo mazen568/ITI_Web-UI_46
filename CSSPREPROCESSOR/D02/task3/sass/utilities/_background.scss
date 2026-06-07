@@ -1,0 +1,9 @@
+@use "../abstracts/variables" as *;
+
+.bg-light {
+  background-color: $light;
+}
+
+.bg-warning {
+  background-color: $warning;
+}

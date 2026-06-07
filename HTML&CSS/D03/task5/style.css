@@ -1,0 +1,10 @@
+#circle {
+    width: 0;
+    height: 0;
+    border: 60px solid red;      
+    border-radius: 50%;
+}
+
+#circle:hover {
+    border-right: 60px solid transparent; 
+}

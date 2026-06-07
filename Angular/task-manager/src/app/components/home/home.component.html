@@ -1,0 +1,24 @@
+<div class="slider-container">
+  <div class="slider">
+    <div class="slides">
+      <div class="slide-item" [class.active]="currentIndex === 0">
+        <img [src]="images[0]" alt="Slide 1">
+      </div>
+      <div class="slide-item" [class.active]="currentIndex === 1">
+        <img [src]="images[1]" alt="Slide 2">
+      </div>
+      <div class="slide-item" [class.active]="currentIndex === 2">
+        <img [src]="images[2]" alt="Slide 3">
+      </div>
+    </div>
+    
+    <button class="nav-btn prev" (click)="prev()">&#10094;</button>
+    <button class="nav-btn next" (click)="next()">&#10095;</button>
+
+    <div class="dots">
+      <span class="dot" [class.active]="currentIndex === 0" (click)="setIndex(0)"></span>
+      <span class="dot" [class.active]="currentIndex === 1" (click)="setIndex(1)"></span>
+      <span class="dot" [class.active]="currentIndex === 2" (click)="setIndex(2)"></span>
+    </div>
+  </div>
+</div>

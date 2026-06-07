@@ -1,0 +1,56 @@
+# Design Patterns D02
+
+---
+
+## Demo
+
+- Video : [Watch here](https://drive.google.com/drive/folders/1J0tKEMGLGR92waQagEu-M9RCdc0qwbdi?usp=sharing)
+
+## Project Structure
+
+- Bridge/
+- Composite/
+- Decorator/
+- Proxy/ (contains `db.json`)
+
+
+---
+
+### ▶ Bridge Pattern
+```bash
+cd Bridge
+node script.js
+```
+
+---
+
+### ▶ Composite Pattern
+```bash
+cd Composite
+node script.js
+```
+
+---
+
+### ▶ Decorator Pattern
+```bash
+cd Decorator
+node script.js
+```
+
+---
+
+### ▶ Proxy Pattern
+```bash
+cd Proxy
+node script.js
+```
+
+---
+
+### ▶ Run JSON Server
+```bash
+cd Proxy
+json-server --watch db.json --port 3000
+```
+

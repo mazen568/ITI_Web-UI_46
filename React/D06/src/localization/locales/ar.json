@@ -1,0 +1,59 @@
+{
+  "common": {
+    "tech": "تيك",
+    "news": "نيوز",
+    "logout": "تسجيل الخروج",
+    "login": "تسجيل الدخول",
+    "signup": "إنشاء حساب",
+    "tech_badge": "تكنولوجيا",
+    "copyright": "© ٢٠٢٦ مازن",
+    "back": "رجوع",
+    "home": "الرئيسية",
+    "posts": "الأخبار",
+    "add_post": "أضف خبر",
+    "publish": "نشر الخبر",
+    "publishing": "جاري النشر...",
+    "loading": "جاري التحميل...",
+    "back_to_home": "العودة للرئيسية",
+    "login_now": "سجل دخول الآن",
+    "go_to_home": "اذهب للرئيسية",
+    "featured_story": "قصة مميزة"
+  },
+  "auth": {
+    "welcome_back": "مرحباً بعودتك",
+    "Hi": "مرحباً",
+    "login_sub": "سجل دخول لمتابعة القراءة",
+    "join_technews": "انضم إلى تيك نيوز",
+    "signup_sub": "أنشئ حسابك للبدء",
+    "username": "اسم المستخدم",
+    "email": "البريد الإلكتروني",
+    "password": "كلمة المرور",
+    "placeholder_name": "أدخل اسمك",
+    "placeholder_email": "أدخل بريدك الإلكتروني",
+    "placeholder_password": "أدخل كلمة المرور",
+    "placeholder_create_password": "أنشئ كلمة مرور",
+    "already_have_account": "لديك حساب بالفعل؟",
+    "dont_have_account": "ليس لديك حساب؟",
+    "sign_up": "أنشئ حساب"
+  },
+  "feed": {
+    "latest_news": "أحدث الأخبار",
+    "search_placeholder": "ابحث عن الأخبار...",
+    "no_news": "لا توجد أخبار متاحة حالياً",
+    "submit_news": "نشر خبر تقني",
+    "placeholder_title": "عنوان الخبر",
+    "placeholder_image": "رابط الصورة",
+    "placeholder_desc": "وصف الخبر",
+    "read_more": "اقرأ المزيد",
+    "read_time": "قراءة ٥ دقائق",
+    "tech_news": "أخبار التقنية"
+  },
+  "errors": {
+    "article_not_found": "المقال غير موجود",
+    "article_not_found_desc": "المقال الذي تبحث عنه غير موجود.",
+    "page_not_found": "٤٠٤ - الصفحة غير موجودة",
+    "page_not_found_desc": "الصفحة التي تبحث عنها غير موجودة أو تم نقلها.",
+    "access_denied": "تم رفض الوصول",
+    "access_denied_desc": "يجب عليك تسجيل الدخول للوصول إلى هذه الصفحة."
+  }
+}

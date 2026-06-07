@@ -1,0 +1,18 @@
+{
+  "news": [
+    {
+      "id": 1,
+      "title": "React 19: The Future of Web Development",
+      "description": "Explore the latest features of React 19, including Server Actions, Partial Prerendering, and improved performance for modern web applications.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1280px-React-icon.svg.png",
+      "timestamp": "April 29, 2026"
+    },
+    {
+      "id": 2,
+      "title": "Next.js 14: The Future of Web Development",
+      "description": "Explore the latest features of Next.js 14, including Server Actions, Partial Prerendering, and improved performance for modern web applications.",
+      "imageUrl": "https://tech.sparkfabrik.com/images/content/nextjs/nextjs-logo.jpg",
+      "timestamp": "April 29, 2026"
+    }
+  ]
+}

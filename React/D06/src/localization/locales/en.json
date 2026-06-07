@@ -1,0 +1,59 @@
+{
+  "common": {
+    "tech": "Tech",
+    "news": "News",
+    "logout": "Logout",
+    "login": "Login",
+    "signup": "Signup",
+    "tech_badge": "Tech",
+    "copyright": "© 2026 mazen",
+    "back": "Back",
+    "home": "Home",
+    "posts": "Posts",
+    "add_post": "Add Post",
+    "publish": "Publish News",
+    "publishing": "Publishing...",
+    "loading": "Loading article...",
+    "back_to_home": "Back to Home",
+    "login_now": "Login Now",
+    "go_to_home": "Go to Home",
+    "featured_story": "FEATURED STORY"
+  },
+  "auth": {
+    "welcome_back": "Welcome Back",
+    "Hi": "Hi",
+    "login_sub": "Login to your account to continue",
+    "join_technews": "Join TechNews",
+    "signup_sub": "Create an account to get started",
+    "username": "Username",
+    "email": "Email",
+    "password": "Password",
+    "placeholder_name": "Enter your name",
+    "placeholder_email": "Enter your email",
+    "placeholder_password": "Enter your password",
+    "placeholder_create_password": "Create a password",
+    "already_have_account": "Already have an account?",
+    "dont_have_account": "Don't have an account?",
+    "sign_up": "Sign up"
+  },
+  "feed": {
+    "latest_news": "Latest News",
+    "search_placeholder": "Search news...",
+    "no_news": "No news available at the moment.",
+    "submit_news": "Submit Tech News",
+    "placeholder_title": "News Title",
+    "placeholder_image": "Image URL",
+    "placeholder_desc": "News Description",
+    "read_more": "Read More",
+    "read_time": "5 min read",
+    "tech_news": "Tech News"
+  },
+  "errors": {
+    "article_not_found": "Article Not Found",
+    "article_not_found_desc": "The article you're looking for doesn't exist.",
+    "page_not_found": "404 - Not Found",
+    "page_not_found_desc": "The page you're looking for doesn't exist or has been moved. Let's get you back on track!",
+    "access_denied": "Access Denied",
+    "access_denied_desc": "You need to be logged in to access this page. Join our community to explore all features!"
+  }
+}

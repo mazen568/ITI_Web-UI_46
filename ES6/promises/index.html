@@ -1,0 +1,94 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h3 id="title1" style="visibility: hidden">Title 1</h3>
+    <h3 id="title2" style="visibility: hidden">Title 2</h3>
+    <h3 id="title3" style="visibility: hidden">Title 3</h3>
+    <h3 id="title4" style="visibility: hidden">Title 4</h3>
+  </body>
+
+  <script>
+    // setTimeout(() => {
+    //   document.getElementById("title1").style.visibility = "visible";
+    //   setTimeout(() => {
+    //     document.getElementById("title2").style.visibility = "visible";
+    //     setTimeout(() => {
+    //       document.getElementById("title3").style.visibility = "visible";
+    //       setTimeout(() => {
+    //         document.getElementById("title4").style.visibility = "visible";
+    //       }, 1000);
+    //     }, 1000);
+    //   }, 1000);
+    // }, 1000);
+    //callback hell
+    //set 1sec for the first title and after the 1sec passes title1 appears
+    //and then after that we set 1sec for the title2 and so on
+
+    //the resolve and reject paramters can be of any name because they are parameters
+    //to an anounymous function
+    // -anything that returns promise will enanle to use then after it
+    // -the code inside then is executed when the resolve inside the promise is executed
+
+    // let p = new Promise((resolve,reject)=>{
+    //      // async code
+    //      console.log("starting promise");
+
+    //      let isSuccess=true
+    //     if(isSuccess){
+    //      console.log("calling resolve");
+    //         resolve()
+    //     }else{
+    //      console.log("calling reject");
+    //         reject()
+    //     }
+    // });
+    // //then is executed on resolve and catch is executed on reject
+    // console.log("before then and catch");
+
+    // p.then(function(){
+    //     console.log("calling then");
+
+    // }).catch(function(){
+    //     console.log("calling catch");
+    // })
+
+    // console.log("after then and catch");
+    // // output
+    // //1-starting promise
+    // //2-calling resolve
+    // //3-before then and catch
+    // //4-after then and catch
+    // //5-calling then
+
+    let p = new Promise((resolve, reject) => {
+      setTimeout(() => {
+        document.getElementById("title1").style.visibility = "visible";
+        resolve();
+      }, 1000);
+    });
+
+    p.then(() => {
+      return new Promise((resolve, reject) => {
+        setTimeout(() => {
+          document.getElementById("title2").style.visibility = "visible";
+          resolve();
+        }, 1000);
+      });
+    }).then(()=>{
+      return new Promise((resolve,reject)=>{
+        setTimeout(() => {
+          document.getElementById("title3").style.visibility = "visible";
+          resolve();
+        }, 1000);
+      })
+    }).then(()=>{
+        setTimeout(() => {
+          document.getElementById("title4").style.visibility = "visible";
+        }, 1000);
+    })
+  </script>
+</html>

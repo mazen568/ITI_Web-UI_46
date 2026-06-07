@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatGPT Clone | Next Gen AI</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <aside class="sidebar" id="sidebar">
+        <button class="new-chat-btn" id="new-chat-btn">
+            <i data-lucide="plus"></i>
+            New Chat
+        </button>
+
+        <div class="chat-history" id="chat-history">
+            <div class="history-item">
+                <i data-lucide="message-square"></i>
+                <span>Quantum Physics Basics</span>
+            </div>
+            <div class="history-item">
+                <i data-lucide="message-square"></i>
+                <span>React vs Vue Comparison</span>
+            </div>
+            <div class="history-item">
+                <i data-lucide="message-square"></i>
+                <span>Healthy Meal Planning</span>
+            </div>
+        </div>
+
+        <div class="sidebar-footer">
+            <div class="user-profile"></div>
+            <div class="user-info">
+                <p style="font-size: 0.9rem; font-weight: 500;">Mazen</p>
+                <p style="font-size: 0.75rem; color: var(--text-secondary);">Premium Member</p>
+            </div>
+            <i data-lucide="more-horizontal" style="margin-left: auto; cursor: pointer; color: var(--text-secondary);"></i>
+        </div>
+    </aside>
+
+    <main class="main-content">
+        <div class="chat-container" id="chat-container">
+            <!-- Welcome Screen -->
+            <div class="welcome-screen" id="welcome-screen">
+                <h1>How can I help you today?</h1>
+                <p style="color: var(--text-secondary); max-width: 500px; margin: 0 auto;">
+                    Experience the future of AI conversation with our sleek and powerful interface. 
+                    Ask anything, from coding to creative writing.
+                </p>
+            </div>
+            
+            <!-- Messages will be injected here -->
+            <div id="messages-list" style="width: 100%;"></div>
+        </div>
+
+        <div class="input-area">
+            <div class="input-container">
+                <textarea id="chat-input" placeholder="Message ChatGPT..." rows="1"></textarea>
+                <button class="send-btn" id="send-btn" disabled>
+                    <i data-lucide="arrow-up"></i>
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>

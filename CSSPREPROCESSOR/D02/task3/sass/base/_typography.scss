@@ -1,0 +1,19 @@
+@use '../abstracts/variables' as *; 
+
+@each $level, $size in $font-sizes {
+    .h#{$level}, .fs-#{$level} {
+      font-size: $size;
+    }
+  }
+//text alignment
+.text-center {
+    text-align: center;
+}
+
+.text-start {
+    text-align: left;
+}
+
+.text-end {
+    text-align: right;
+}

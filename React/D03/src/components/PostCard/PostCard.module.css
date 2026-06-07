@@ -1,0 +1,92 @@
+.post-card {
+  background-color: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* IMAGE */
+.post-image-container {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  background-color: #020617;
+}
+
+.post-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.news-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #6366f1;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+
+/* MAIN CONTENT */
+.post-main {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.post-header {
+  font-size: 0.75rem;
+  color: #94a3b8;
+}
+
+.post-title {
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+
+.post-content {
+  font-size: 0.95rem;
+  color: #cbd5e1;
+  line-height: 1.5;
+}
+
+/* FOOTER */
+.post-footer {
+  margin-top: 10px;
+}
+
+/* ACTION AREA (LIKES / DISLIKES) */
+.post-action {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+/* BUTTON BASE STYLE */
+.post-action button {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #334155;
+  color: #e2e8f0;
+  font-size: 0.85rem;
+  transition: all 0.2s ease;
+}
+
+/* hover effect */
+.post-action button:hover {
+  background-color: #475569;
+  transform: translateY(-1px);
+}
+

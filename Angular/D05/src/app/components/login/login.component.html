@@ -1,0 +1,57 @@
+<div class="login-container">
+    <form
+    #form="ngForm" 
+    class="login-form" 
+    (submit)="handleSubmit(form,email)" 
+    >
+      <h2>Login</h2>
+  
+      <!-- Email -->
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email"
+          ngModel
+          required
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+          #email="ngModel"
+        />
+        @if(email.control.errors?.['required'] && email.control.dirty) {
+          <p class="error-message">email is required</p>
+        }
+        @if(email.control.errors?.['pattern'] && email.control.dirty) {
+            <p class="error-message">email is invalid</p>
+          }
+      </div>
+  
+      <!-- Password -->
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Enter your password"
+          ngModel
+          required
+          minlength="8"
+        />
+      </div>
+      <!-- <p>valid: {{form.valid}}</p>
+      <p>invalid: {{form.invalid}}</p>
+      <p>touched: {{form.touched}}</p>
+      <p>untouched: {{form.untouched}}</p> -->
+
+      <!-- @if(form.invalid &&  form.dirty) {
+        <p class="error-message">Please fill out the form correctly.</p>
+      } -->
+      <!-- Submit -->
+      <button type="submit" >
+        Login
+      </button>
+  
+    </form>
+  </div>

@@ -1,0 +1,103 @@
+{
+  "news": [
+    {
+      "id": 1,
+      "title": "React 19: The Future of Web Development",
+      "description": "Explore the latest features of React 19, including Server Actions, Partial Prerendering, and improved performance for modern web applications.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1280px-React-icon.svg.png",
+      "timestamp": "April 29, 2026"
+    },
+    {
+      "id": 2,
+      "title": "Next.js 14: The Future of Web Development",
+      "description": "Explore the latest features of Next.js 14, including Server Actions, Partial Prerendering, and improved performance for modern web applications.",
+      "imageUrl": "https://tech.sparkfabrik.com/images/content/nextjs/nextjs-logo.jpg",
+      "timestamp": "April 29, 2026"
+    },
+    {
+      "id": 3,
+      "title": "AI Startups Surge in 2026",
+      "description": "Artificial intelligence startups are seeing record investments in 2026 as companies race to build smarter automation and generative AI tools.",
+      "imageUrl": "https://images.unsplash.com/photo-1555949963-aa79dcee981c",
+      "timestamp": "April 30, 2026"
+    },
+    {
+      "id": 4,
+      "title": "TypeScript 6 Announced with Enhanced Type Safety",
+      "description": "The new TypeScript 6 release introduces stricter type inference and improved developer tooling for large-scale applications.",
+      "imageUrl": "https://images.unsplash.com/photo-1518770660439-4636190af475",
+      "timestamp": "April 30, 2026"
+    },
+    {
+      "id": 5,
+      "title": "Node.js 22 Boosts Backend Performance",
+      "description": "Node.js 22 brings performance optimizations and improved support for modern JavaScript features in backend development.",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ-sdRIvQxSBfArITwaURCNiCo1hu9Vf_uEQ&s",
+      "timestamp": "May 1, 2026"
+    },
+    {
+      "id": 6,
+      "title": "Firebase Introduces New Real-Time Features",
+      "description": "Firebase expands its real-time capabilities, making it easier to build collaborative apps with live data synchronization.",
+      "imageUrl": "https://images.unsplash.com/photo-1555066931-4365d14bab8c",
+      "timestamp": "May 1, 2026"
+    },
+    {
+      "id": 7,
+      "title": "WebAssembly Gains Popularity in Frontend Apps",
+      "description": "Developers are increasingly using WebAssembly to run high-performance code directly in the browser.",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkP6lTm5gvtt-X266jj7SiBckBTMSqfhOfnA&s",
+      "timestamp": "May 1, 2026"
+    },
+    {
+      "title": "sadas",
+      "imageUrl": "https://images.unsplash.com/photo-1555949963-aa79dcee981c",
+      "description": "asdsadadsd",
+      "id": 8
+    },
+    {
+      "title": "fds",
+      "imageUrl": "https://images.unsplash.com/photo-1555949963-aa79dcee981c",
+      "description": "sdfsdf",
+      "id": 9
+    },
+    {
+      "title": "data",
+      "imageUrl": "https://tech.sparkfabrik.com/images/content/nextjs/nextjs-logo.jpg",
+      "description": "data",
+      "id": 10
+    }
+  ],
+  "users": [
+    {
+      "name": "mazen",
+      "email": "mazen@gmail.com",
+      "password": "12345678",
+      "id": 1
+    },
+    {
+      "name": "omar",
+      "email": "mazenraafat568@gmail.com",
+      "password": "11111111",
+      "id": 2
+    },
+    {
+      "name": "hassan",
+      "email": "hassan@gmail.com",
+      "password": "12345678",
+      "id": 3
+    },
+    {
+      "name": "omar",
+      "email": "omar@gmail.com",
+      "password": "12345678",
+      "id": 4
+    },
+    {
+      "name": "mahmoud",
+      "email": "mahmoud@gmail.com",
+      "password": "12345678",
+      "id": 5
+    }
+  ]
+}

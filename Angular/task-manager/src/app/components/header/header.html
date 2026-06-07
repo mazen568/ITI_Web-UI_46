@@ -1,0 +1,22 @@
+<header class="header">
+  <div class="header-container">
+    <div class="logo">Task <span>Manager</span></div>
+
+    <div class="nav-content">
+      <nav class="nav-main">
+        <a routerLink="/home" routerLinkActive="active" class="nav-link">Home</a>
+        <a routerLink="/add" routerLinkActive="active" class="nav-link">Add</a>
+        <a routerLink="/lists" routerLinkActive="active" class="nav-link">Lists</a>
+      </nav>
+
+      <div class="nav-auth">
+        @if (isLoggedIn) {
+          <button class="nav-btn-outline" (click)="logout()">Logout</button>
+        } @else {
+          <a routerLink="/login" class="nav-link">Login</a>
+          <a routerLink="/signup" class="btn-signup">Sign Up</a>
+        }
+      </div>
+    </div>
+  </div>
+</header>

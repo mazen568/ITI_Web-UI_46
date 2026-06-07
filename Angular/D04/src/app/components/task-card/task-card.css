@@ -1,0 +1,101 @@
+/* Task Card */
+.task-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #16161f;
+  padding: 18px 24px;
+  border-radius: 14px;
+  margin-bottom: 12px;
+  border: 1px solid #1e1e2e;
+  transition: all 0.25s ease;
+}
+
+.task-card:hover {
+  border-color: #7c3aed;
+  background: #1a1a28;
+  transform: translateX(4px);
+}
+
+/* Completed state */
+.task-card.completed {
+  opacity: 0.5;
+  border-color: #1e1e2e;
+}
+
+.task-card.completed .task-title {
+  text-decoration: line-through;
+  color: #475569;
+}
+
+/* Task text content */
+.task-content {
+  flex: 1;
+}
+
+.task-meta {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.task-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #e2e8f0;
+  margin-bottom: 4px;
+  display: block;
+}
+
+/* Action buttons area */
+.actions {
+  display: flex;
+  gap: 8px;
+  margin-left: 16px;
+}
+
+/* Base button style */
+.btn-action {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  font-size: 1rem;
+  border: 1px solid transparent;
+  background: #1e1e2e;
+  color: #94a3b8;
+  transition: all 0.2s ease;
+}
+
+/* Hover: slight scale + color pop */
+.btn-action:hover {
+  transform: scale(1.1);
+}
+
+/* Complete button hover: green */
+.btn-complete:hover {
+  background: rgba(22, 163, 74, 0.2);
+  color: #4ade80;
+  border-color: #16a34a;
+}
+
+/* Completed state: solid green */
+.task-card.completed .btn-complete {
+  color: #4ade80;
+}
+
+/* Delete button hover: red */
+.btn-delete:hover {
+  background: rgba(220, 38, 38, 0.2);
+  color: #f87171;
+  border-color: #dc2626;
+}
+
+/* Edit button hover: purple */
+.btn-edit:hover {
+  background: rgba(124, 58, 237, 0.2);
+  color: #a78bfa;
+  border-color: #7c3aed;
+}

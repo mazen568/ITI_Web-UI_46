@@ -1,0 +1,11 @@
+img{
+    width: 400px;
+    height: 400px;
+    opacity: 1;
+    transition: all linear 1s;
+}
+img:hover{
+    opacity: 0;
+    width: 200px;
+    height: 200px;
+}

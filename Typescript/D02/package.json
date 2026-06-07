@@ -1,0 +1,8 @@
+{
+  "name": "card-game",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "npx live-server"
+  }
+}

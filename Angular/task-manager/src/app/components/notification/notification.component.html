@@ -1,0 +1,14 @@
+<div class="notification" [class]="type">
+  <div class="notification-content">
+    <span class="icon">
+      @switch (type) {
+        @case ('success') { <app-icon name="check" [size]="20" /> }
+        @case ('delete') { <app-icon name="trash" [size]="20" /> }
+        @case ('update') { <app-icon name="edit" [size]="20" /> }
+        @case ('undo') { <app-icon name="undo" [size]="20" /> }
+      }
+    </span>
+    <span class="message">{{ message }}</span>
+  </div>
+  <button class="close-btn" (click)="close.emit()">×</button>
+</div>

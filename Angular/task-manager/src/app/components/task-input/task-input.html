@@ -1,0 +1,63 @@
+<div class="task-input-container">
+  <form class="task-form">
+    <div class="form-header">
+      <h3 class="form-title">Create New Task</h3>
+    </div>
+
+    <div class="form-grid">
+      <!-- Title -->
+      <div class="form-group full-width">
+        <label for="title">Task Title</label>
+        <input type="text" id="title" placeholder="Enter task title..." [(ngModel)]="title" name="title"/>
+      </div>
+
+      <!-- Description -->
+      <div class="form-group full-width">
+        <label for="description">Description</label>
+        <textarea id="description" rows="3" placeholder="Add some details..." [(ngModel)]="description" name="description"></textarea>
+      </div>
+
+      <!-- Priority -->
+      <div class="form-group">
+        <label for="priority">Priority</label>
+        <select id="priority" [(ngModel)]="priority" name="priority">
+          <option value="low">Low</option>
+          <option value="medium" selected>Medium</option>
+          <option value="high">High</option>
+        </select>
+      </div>
+
+      <!-- Due Date -->
+      <div class="form-group">
+        <label for="dueDate">Due Date</label>
+        <input type="date" id="dueDate" [(ngModel)]="dueDate" name="dueDate" />
+      </div>
+
+      <!-- Category -->
+      <div class="form-group">
+        <label for="category">Category</label>
+        <select id="category" [(ngModel)]="category" name="category">
+          <option value="work">Work</option>
+          <option value="personal">Personal</option>
+          <option value="study">Study</option>
+        </select>
+      </div>
+
+      <!-- Tags (Static placeholder) -->
+      <div class="form-group">
+        <label for="tags">Tags</label>
+        <input type="text" id="tags" placeholder="Add tags (e.g. urgent, home)" [(ngModel)]="tags" name="tags"/>
+      </div>
+    </div>
+
+    @if (error.state) {
+      <div class="error-message">
+        {{ error.message }}
+      </div>
+    }
+
+    <div class="form-actions">
+      <button type="submit" class="btn-submit" (click)="addTask()">{{ task ? 'Update Task' : 'Add Task' }}</button>
+    </div>
+  </form>
+</div>

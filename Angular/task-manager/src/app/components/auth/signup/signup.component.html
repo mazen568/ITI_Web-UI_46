@@ -1,0 +1,118 @@
+<div class="auth-container">
+  <div class="auth-card">
+    <h2>Sign Up</h2>
+
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+      <!-- Username -->
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input 
+          type="text"
+          id="username"
+          formControlName="username"
+          class="form-control"
+          placeholder="Enter your username"
+        >
+
+        @if (username?.invalid && (username?.dirty || username?.touched)) {
+          <div class="error-message">
+            @if (username?.errors?.['required']) {
+              <span>Username is required.</span>
+            }
+            @if (username?.errors?.['minlength']) {
+              <span>Username must be at least 3 characters.</span>
+            }
+            @if (username?.errors?.['noSpace']) {
+              <span>Username cannot contain spaces.</span>
+            }
+          </div>
+        }
+      </div>
+
+      <!-- Email -->
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input 
+          type="email"
+          id="email"
+          formControlName="email"
+          class="form-control"
+          placeholder="Enter your email"
+        >
+
+        @if (email?.invalid && (email?.dirty || email?.touched)) {
+          <div class="error-message">
+            @if (email?.errors?.['required']) {
+              <span>Email is required.</span>
+            }
+            @if (email?.errors?.['email']) {
+              <span>Enter a valid email address.</span>
+            }
+          </div>
+        }
+      </div>
+
+      <!-- Password -->
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input 
+          type="password"
+          id="password"
+          formControlName="password"
+          class="form-control"
+          placeholder="Create a password"
+        >
+
+        @if (password?.invalid && (password?.dirty || password?.touched)) {
+          <div class="error-message">
+            @if (password?.errors?.['required']) {
+              <span>Password is required.</span>
+            }
+            @if (password?.errors?.['minlength']) {
+              <span>Password must be at least 8 characters.</span>
+            }
+          </div>
+        }
+      </div>
+
+      <!-- Confirm Password -->
+      <div class="form-group">
+        <label for="confirmPassword">Confirm Password</label>
+        <input 
+          type="password"
+          id="confirmPassword"
+          formControlName="confirmPassword"
+          class="form-control"
+          placeholder="Confirm your password"
+        >
+
+        @if ((confirmPassword?.dirty || confirmPassword?.touched)) {
+          <div class="error-message">
+            @if (confirmPassword?.errors?.['required']) {
+              <span>Please confirm your password.</span>
+            } @else if (form.hasError('passwordMismatch')) {
+              <span>Passwords must match.</span>
+            }
+          </div>
+        }
+      </div>
+
+      @if (errorMessage()) {
+        <div class="error-message global-error">
+          {{ errorMessage() }}
+        </div>
+      }
+
+      <!-- Submit -->
+      <button type="submit" [disabled]="form.invalid" class="btn-primary">
+        Sign Up
+      </button>
+
+      <p class="auth-switch">
+        Already have an account?
+        <a routerLink="/login">Login</a>
+      </p>
+
+    </form>
+  </div>
+</div>

@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat UI</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app" id="app">
+      <aside class="sidebar" aria-label="Chat history">
+        <div class="sidebar__top">
+          <button class="btn btn--primary" id="newChatBtn" type="button">
+            New chat
+          </button>
+        </div>
+
+        <div class="sidebar__section">
+          <div class="sidebar__sectionTitle">Chats</div>
+          <div class="chatList" id="chatList" role="list"></div>
+        </div>
+
+        <div class="sidebar__bottom">
+          <div class="sidebar__hint">
+            Local-only UI • Saved to your browser
+          </div>
+        </div>
+      </aside>
+
+      <main class="main" aria-label="Conversation">
+        <header class="topbar">
+          <div class="topbar__title" id="activeChatTitle">New chat</div>
+          <div class="topbar__actions">
+            <button
+              class="btn btn--ghost"
+              id="clearCurrentBtn"
+              type="button"
+              title="Clear messages in current chat"
+            >
+              Clear
+            </button>
+          </div>
+        </header>
+
+        <section class="thread" id="thread" aria-live="polite"></section>
+
+        <footer class="composer" aria-label="Message composer">
+          <form class="composer__form" id="composerForm" autocomplete="off">
+            <div class="composer__inputWrap">
+              <textarea
+                class="composer__input"
+                id="composerInput"
+                rows="1"
+                placeholder="Message…"
+                aria-label="Message"
+              ></textarea>
+              <div class="composer__meta" id="composerMeta">
+                Enter to send • Shift+Enter for new line
+              </div>
+            </div>
+            <button class="btn btn--send" id="sendBtn" type="submit">
+              Send
+            </button>
+          </form>
+        </footer>
+      </main>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
+

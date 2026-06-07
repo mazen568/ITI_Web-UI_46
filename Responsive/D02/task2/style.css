@@ -1,0 +1,93 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+    margin-top: 50px;     
+}
+section
+{
+    width: 75%;
+    background-color: aqua;
+    display: grid;
+    grid-auto-rows: minmax(180px,auto);
+    grid-template-areas: "aside nav nav"
+    "aside art aside2"
+    "aside art aside2"
+    "foot foot aside2"
+    ;
+    gap: 10px;
+}
+nav{
+    background-color: black;
+    grid-area: nav;
+    font-size: 50px;
+
+}
+aside{
+    background-color: black;
+    grid-area: aside;
+    font-size: 50px;
+}
+.aside2{
+    background-color: black;
+    grid-area: aside2;
+    font-size: 50px;
+}
+article{
+    background-color: black;
+    grid-area: art;
+    font-size: 50px;
+}
+footer{
+    background-color: black;
+    grid-area: foot;
+    font-size: 50px;
+}
+@keyframes helicopter {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes colorCycle {
+    0%   { 
+        background-color: red; 
+    }
+    20%  { 
+        background-color: orange; 
+    }
+    40%  { 
+        background-color: yellow; 
+    }
+    60%  { 
+        background-color: green; 
+    }
+    80%  { 
+        background-color: blue; 
+    }
+    100% { 
+        background-color: purple; 
+    }
+}
+
+@media (max-width: 1024px) {
+    section {
+        animation: helicopter 4s linear infinite;
+        transform-origin: center center;
+    }
+
+    nav     { 
+        animation: colorCycle 2s linear infinite; 
+    }
+    aside   { 
+        animation: colorCycle 2s linear infinite; 
+    }
+    .aside2 { 
+        animation: colorCycle 2s linear infinite; 
+    }
+    article { 
+        animation: colorCycle 2s linear infinite; 
+    }
+    footer  { 
+        animation: colorCycle 2s linear infinite; 
+    }
+}

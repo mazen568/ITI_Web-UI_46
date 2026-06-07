@@ -1,0 +1,30 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.d-flex {
+  display: flex;
+}
+
+.d-none {
+  display: none;
+}
+
+.d-block {
+  display: block;
+}
+
+@each $breakpoint, $value in $breakpoints {
+  @include respond-to($breakpoint) {
+    .d-#{$breakpoint}-block {
+      display: block;
+    }
+
+    .d-#{$breakpoint}-none {
+      display: none;
+    }
+
+    .d-#{$breakpoint}-flex {
+      display: flex;
+    }
+  }
+}

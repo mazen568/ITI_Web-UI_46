@@ -1,0 +1,22 @@
+{
+  "name": "task",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test:all",
+    "test:mocha": "mocha",
+    "test:jasmine": "jasmine",
+    "test:jest": "npm --prefix express test",
+    "test:all": "mocha && jasmine && npm --prefix express test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "chai": "^6.2.2",
+    "jasmine": "^6.2.0",
+    "mocha": "^11.7.6"
+  }
+}

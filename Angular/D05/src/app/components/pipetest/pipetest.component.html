@@ -1,0 +1,23 @@
+<h1>{{ name | uppercase }}</h1>
+<h2>{{ today | date : "short" }}</h2>
+<h2>{{ today | date : "medium" }}</h2>
+<h2>{{ today | date : "long" }}</h2>
+<h2>{{ today | date : "y" }}</h2>
+<h2>{{ today | date : "yy" }}</h2>
+<h2>{{ today | date : "M" }}</h2>
+<h2>{{ today | date : "MM" }}</h2>
+<h2>{{ today | date : "MMM" }}</h2>
+<h2>{{ today | date : "MMMM" }}</h2>
+<h2>{{ today | date : "dd-MM-yy" }}</h2>
+<h2>{{ price | currency : "EGP" }}</h2>
+<h2>{{ price | currency : "EUR" }}</h2>
+<h2>{{ price | currency : "INR" }}</h2>
+<h2>{{ arrOb | json }}</h2>
+<br>
+<br>
+@for(i of arrOb | slice:3:6; track $index){
+    <p>{{i.name}}</p>
+}
+<h3>{{promiseVar|async}}</h3>
+
+<h3> {{name | custompipe}}  </h3>

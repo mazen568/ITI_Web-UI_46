@@ -1,0 +1,21 @@
+<main class="main-container">
+  <div class="task-list-header">
+    <h2 class="title">My Tasks</h2>
+    <span class="task-count">{{ filteredTasks.length }} items</span>
+  </div>
+
+  <div class="filter-tabs">
+    <button [class.active]="filter === 'all'" (click)="setFilter('all')">All</button>
+    <button [class.active]="filter === 'todo'" (click)="setFilter('todo')">Todo</button>
+    <button [class.active]="filter === 'done'" (click)="setFilter('done')">Done</button>
+  </div>
+
+  <div class="tasks">
+    @for (task of filteredTasks; track task.id) {
+      <app-task-card [task]="task" (performOperation)="onPerformOperation($event)"></app-task-card>
+    }
+    @empty{
+      <div class="empty">There are no tasks yet</div>
+    }
+  </div>
+</main>

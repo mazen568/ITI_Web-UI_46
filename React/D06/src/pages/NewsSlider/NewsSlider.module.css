@@ -1,0 +1,116 @@
+.news-slider {
+  width: 100%;
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+  background-color: var(--bg-color);
+  height: 500px;
+}
+
+.slide-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.slider-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+}
+
+.slider-overlay {
+  position: absolute;
+  bottom: 0;
+  inset-inline: 0;
+  padding: 80px 20px 40px;
+  background: linear-gradient(transparent, var(--bg-color));
+  display: flex;
+  justify-content: center;
+}
+
+.slider-text-content {
+  width: 100%;
+  max-width: 1000px; 
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.featured-badge {
+  background-color: var(--accent-color);
+  color: white;
+  padding: 4px 12px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 800;
+  width: fit-content;
+  letter-spacing: 0.05em;
+}
+
+.slider-title {
+  color: var(--text-primary); 
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.1;
+  text-align: start;
+}
+
+.slider-desc {
+  color: var(--text-primary);
+  font-size: 1.1rem;
+  max-width: 600px;
+  line-height: 1.5;
+  text-align: start;
+}
+
+.slider-controls {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  padding: 0 20px;
+  pointer-events: none;
+  flex-direction: row; /* Match row direction regardless of RTL for visual next/prev? Actually flip is better. */
+}
+
+.control-btn {
+  pointer-events: auto;
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.control-btn:hover {
+  background: var(--accent-color);
+  border-color: var(--accent-color);
+  transform: scale(1.1);
+}
+
+.news-slider-loading {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--surface-color);
+  color: var(--text-secondary);
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .slider-title { font-size: 2rem; }
+  .news-slider { height: 400px; }
+}

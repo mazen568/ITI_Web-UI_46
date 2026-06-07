@@ -1,0 +1,173 @@
+body {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    background-color: #b8b8b8;
+    padding: 30px 0 0 0;
+    width: 95%;
+}
+
+.top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto 10px;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #666;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #666;
+    font-size: 14px;
+}
+
+.middle-row {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.intro-section {
+    flex: 1;
+    min-width: 300px;
+}
+
+.intro {
+    font-size: 39px;
+    font-weight: bold;
+    color: #555;
+    margin: 0 0 10px 0;
+}
+
+.intro-section span {
+    font-size: 25px;
+    color: #666;
+    display: block;
+}
+
+.featured-slider {
+    background-color: #999;
+    width: 640px;
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    font-size: 24px;
+}
+
+.dots-row {
+    background-color: white;
+    width: 100%;
+    padding: 15px 0;
+    margin-top: 20px;
+}
+
+.slider-dots {
+    display: flex;
+    gap: 12px;
+    justify-content: flex-end;
+    align-items: center;
+    width: 74%;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #999;
+}
+
+.dot.active {
+    background-color: #666;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    width: 100%; 
+    gap: 20px;
+}
+
+.services-section, .recent-work-section {
+    display: flex;
+    gap: 20px;
+    width: 80%;
+    flex-wrap: wrap; 
+    justify-content: center;
+}
+
+.service-box, .work-box {
+    flex: 1 1 250px; 
+    background-color: #b8b8b8;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    font-size: 18px;
+    text-align: center;
+}
+
+.twitter-feed {
+    background-color: #b8b8b8;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 20px;
+    width: 80%; 
+}
+.twitter-feed p{
+    margin-left: 30px;
+}
+.footer {
+    background-color: #b8b8b8;
+    padding: 20px;
+    display: flex;
+    width: 95%;
+    flex-wrap: wrap; 
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-links {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap; 
+    justify-content: center;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #666;
+    font-size: 14px;
+}
+
+.copyright {
+    color: #666;
+    font-size: 14px;
+}

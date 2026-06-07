@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+    <main class="main-content">
+        <div class="chat-container" id="chat-container">
+            <div class="welcome-screen" id="welcome-screen">
+                <h1>How can I help you today?</h1>
+                <p style="color: var(--text-secondary); max-width: 500px; margin: 0 auto;">
+                    Experience the future of AI conversation with our sleek and powerful interface.
+                </p>
+            </div>
+
+            <div id="messages-list" style="width: 100%; display: flex; flex-direction: column; align-items: center;">
+            </div>
+        </div>
+
+        <div class="input-container">
+            <textarea id="chat-input" placeholder="Message ChatGPT..." rows="1"></textarea>
+            <div class="button-group" style="position: absolute; bottom: 8px; right: 12px; display: flex; gap: 8px;">
+                <button class="new-chat-btn-small" id="clear-btn" title="New Chat"
+                    style="background: transparent; border: 1px solid var(--border-color); color: var(--text-secondary); padding: 8px; border-radius: 8px; cursor: pointer;">
+                    <i data-lucide="message-square-plus" style="width: 18px; height: 18px;"></i> </button>
+                <button class="send-btn" id="send-btn" disabled>
+                    <i data-lucide="arrow-up"></i>
+                </button>
+            </div>
+        </div>
+    </main>
+    <script>lucide.createIcons();</script>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,217 @@
+/*comment will appear in css*/
+/*!comment will appear in css and minified css*/
+.parent {
+  background-color: aqua;
+}
+.parent .child {
+  color: red;
+}
+.parent .child .subchild {
+  background-color: green;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+.container-fluid {
+  width: 100%;
+}
+.container-fluid:hover {
+  background-color: red;
+}
+.container:hover {
+  background-color: aqua;
+}
+
+.elem1 {
+  font-size: 20px;
+}
+
+.elem2 {
+  font-size: 50px;
+}
+
+.elem3 {
+  font-size: 100px;
+  background-color: blue;
+  color: gray;
+}
+
+.boxv1, .boxv2 {
+  width: 100px;
+  height: 100px;
+  color: red;
+}
+
+.boxv2 {
+  font-size: 20px;
+  color: green;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
+
+.box {
+  background-color: yellow;
+}
+
+.col-1 {
+  width: 8.3333333333%;
+}
+
+.col-2 {
+  width: 16.6666666667%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.3333333333%;
+}
+
+.col-5 {
+  width: 41.6666666667%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.3333333333%;
+}
+
+.col-8 {
+  width: 66.6666666667%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.3333333333%;
+}
+
+.col-11 {
+  width: 91.6666666667%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+.while-col-1 {
+  width: 8.3333333333%;
+}
+
+.while-col-2 {
+  width: 16.6666666667%;
+}
+
+.while-col-3 {
+  width: 25%;
+}
+
+.while-col-4 {
+  width: 33.3333333333%;
+}
+
+.while-col-5 {
+  width: 41.6666666667%;
+}
+
+.while-col-6 {
+  width: 50%;
+}
+
+.while-col-7 {
+  width: 58.3333333333%;
+}
+
+.while-col-8 {
+  width: 66.6666666667%;
+}
+
+.while-col-9 {
+  width: 75%;
+}
+
+.while-col-10 {
+  width: 83.3333333333%;
+}
+
+.while-col-11 {
+  width: 91.6666666667%;
+}
+
+.while-col-12 {
+  width: 100%;
+}
+
+.each-blue {
+  background-color: blue;
+}
+
+.each-red {
+  background-color: red;
+}
+
+.each-green {
+  background-color: green;
+}
+
+.each-white {
+  background-color: white;
+}
+
+.each-google {
+  background-color: blue;
+}
+
+.each-facebook {
+  background-color: green;
+}
+
+.each-twitter {
+  background-color: cyan;
+}
+
+.fun-elem {
+  width: 100px;
+  height: 50px;
+}
+
+.mixin-elem {
+  font-size: 100px;
+  width: 500px;
+  height: 500px;
+  background-color: red;
+  background-color: green;
+}
+
+.square {
+  width: 100px;
+  height: 200px;
+  font-size: 20px;
+  background-color: red;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+body {
+  background-color: aqua;
+}
+
+.container__child--red {
+  background-color: red;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,17 @@
+.timer-badge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(124, 58, 237, 0.1);
+  padding: 4px 12px;
+  border-radius: 9999px;
+  border: 1px solid rgba(124, 58, 237, 0.2);
+  margin-left: 8px;
+}
+
+.timer-text {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #a78bfa;
+  font-variant-numeric: tabular-nums;
+}

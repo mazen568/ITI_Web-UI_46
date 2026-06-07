@@ -1,0 +1,35 @@
+.main-content {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px 0px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.post-form-container {
+  background-color: var(--surface-color);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.section-title {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin-bottom: 15px;
+}
+
+.post-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.submit-btn {
+  align-self: flex-end;
+  padding: 8px 24px;
+}
+
+

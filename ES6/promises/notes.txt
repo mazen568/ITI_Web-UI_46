@@ -1,0 +1,2 @@
+-anything that returns promise will enanle to use then after it
+-the code inside then is executed when the resolve inside the promise is executed
