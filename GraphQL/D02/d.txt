@@ -1,0 +1,64 @@
+Mutation: {
+    addUser: (_, { name, email }) => {
+      const newUser = { id: String(users.length + 1), name, email };
+      users.push(newUser);
+      return newUser;
+    },
+    updateUser: (_, { id, name, email }) => {
+      const user = users.find((u) => u.id === id);
+      if (!user) return null;
+      if (name) user.name = name;
+      if (email) user.email = email;
+      return user;
+    },
+    deleteUser: (_, { id }) => {
+      const index = users.findIndex((u) => u.id === id);
+      if (index === -1) return null;
+      return users.splice(index, 1)[0];
+    },
+
+    addPost: (_, { title, content, authorId }) => {
+      const newPost = {
+        id: String(posts.length + 1),
+        title,
+        content,
+        authorId,
+      };
+      posts.push(newPost);
+      return newPost;
+    },
+    updatePost: (_, { id, title, content }) => {
+      const post = posts.find((p) => p.id === id);
+      if (!post) return null;
+      if (title) post.title = title;
+      if (content) post.content = content;
+      return post;
+    },
+    deletePost: (_, { id }) => {
+      const index = posts.findIndex((p) => p.id === id);
+      if (index === -1) return null;
+      return posts.splice(index, 1)[0];
+    },
+
+    addComment: (_, { text, postId, userId }) => {
+      const newComment = {
+        id: String(comments.length + 1),
+        text,
+        postId,
+        userId,
+      };
+      comments.push(newComment);
+      return newComment;
+    },
+    updateComment: (_, { id, text }) => {
+      const comment = comments.find((c) => c.id === id);
+      if (!comment) return null;
+      if (text) comment.text = text;
+      return comment;
+    },
+    deleteComment: (_, { id }) => {
+      const index = comments.findIndex((c) => c.id === id);
+      if (index === -1) return null;
+      return comments.splice(index, 1)[0];
+    },
+  },
