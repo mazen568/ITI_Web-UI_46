@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=28&duration=3000&pause=1000&color=0078D7&center=true&vCenter=true&multiline=true&repeat=true&width=800&height=100&lines=ITI+9-Month+Full+Stack+Web+Development+Journey;From+Fundamentals+to+Production-Ready+Applications" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=28&duration=3000&pause=1000&color=0078D7&center=true&vCenter=true&multiline=true&repeat=true&width=800&height=100&lines=ITI+9-Month+Web+&+UI+Development+Program+Journey" alt="Typing SVG" />
 </p>
 
 <p align="center">
@@ -21,7 +21,7 @@
 
 ## 🧠 Overview
 
-This repository documents my **9-month intensive Full Stack Web Development** program at the **Information Technology Institute (ITI)** — one of the most rigorous and comprehensive software engineering training programs in the region.
+This repository documents my **9-month intensive Web & UI Development** program at the **Information Technology Institute (ITI)** — one of the most rigorous and comprehensive software engineering training programs in the region.
 
 The journey spans the entire modern web development ecosystem: from core **HTML/CSS/JavaScript** fundamentals through advanced **frameworks**, **backend architectures**, **database design**, **DevOps**, and **AI-powered development** — culminating in production-grade, real-world project work.
 
@@ -249,5 +249,5 @@ ITI/
 </p>
 
 <p align="center">
-  <sub>Built during the ITI 9-Month Full Stack Web & UI Development Program</sub>
+  <sub>Built during the ITI 9-Month Web & UI Development Program</sub>
 </p>
