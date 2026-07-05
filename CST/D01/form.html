@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="form-body">
+    <h2 >Registration Form</h2>
+    <form action="login.html" method="get">
+      <table>
+        <tr>
+          <td><label for="firstname">First Name:</label></td>
+          <td>
+            <input
+              type="text"
+              id="firstname"
+              name="firstname"
+              placeholder="Enter your first name"
+            />
+          </td>
+        </tr>
+
+        <tr>
+          <td><label for="lastname">Last Name:</label></td>
+          <td>
+            <input
+              type="text"
+              id="lastname"
+              name="lastname"
+              placeholder="Enter your last name"
+            />
+          </td>
+        </tr>
+
+        <tr>
+          <td><label for="email">Email:</label></td>
+          <td>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your email"
+            />
+          </td>
+        </tr>
+
+        <tr>
+          <td><label for="password">Password:</label></td>
+          <td>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Enter your password"
+            />
+          </td>
+        </tr>
+
+        <tr>
+          <td rowspan="2"><label for="gender">Gender:</label></td>
+          <td>
+            <input type="radio" id="female" name="gender" value="female" />
+            <label for="female">Female</label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="radio" id="male" name="gender" value="male" />
+            <label for="male">Male</label>
+          </td>
+        </tr>
+
+        <tr>
+          <td><label for="country">Country:</label></td>
+          <td>
+            <select id="country" name="country">
+              <option value="" disabled selected>Select a country</option>
+              <optgroup label="Africa">
+                <option value="Egypt">Egypt</option>
+                <option value="Sudan">Sudan</option>
+                <option value="Libya">Libya</option>
+                <option value="Tunisia">Tunisia</option>
+                <option value="Morocco">Morocco</option>
+              </optgroup>
+              <optgroup label="Europe" disabled>
+                <option value="italy">Italy</option>
+                <option value="sweden">Sweden</option>
+                <option value="Spain">Spain</option>
+              </optgroup>
+              <optgroup label="Asia">
+                <option value="Palestine">Palestine</option>
+                <option value="south_korea">South Korea</option>
+                <option value="india">India</option>
+              </optgroup>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <td><label for="birthday">Birthday:</label></td>
+          <td>
+            <input type="date" id="year" name="year" />
+          </td>
+        </tr>
+
+        <tr>
+          <td colspan="2"><u>Interests</u></td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <table class="inner-table">
+              <tr>
+                <td>
+                  <input
+                    type="checkbox"
+                    id="sports"
+                    name="interests"
+                    value="sports"
+                  />
+                  <label for="sports">Sports</label>
+                </td>
+                <td>
+                  <input
+                    type="checkbox"
+                    id="music"
+                    name="interests"
+                    value="music"
+                  />
+                  <label for="music">Music</label>
+                </td>
+                <td>
+                  <input
+                    type="checkbox"
+                    id="fashion"
+                    name="interests"
+                    value="fashion"
+                  />
+                  <label for="fashion">Fashion</label>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input
+                    type="checkbox"
+                    id="reading"
+                    name="interests"
+                    value="reading"
+                  />
+                  <label for="reading">Reading</label>
+                </td>
+                <td>
+                  <input
+                    type="checkbox"
+                    id="shopping"
+                    name="interests"
+                    value="shopping"
+                  />
+                  <label for="shopping">shopping</label>
+                </td>
+                <td>
+                  <input
+                    type="checkbox"
+                    id="movies"
+                    name="interests"
+                    value="movies"
+                  />
+                  <label for="movies">movies</label>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" >
+            <label for="bio"><u>Bio</u></label>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <textarea id="bio" name="bio" rows="5" cols="40"></textarea>
+          </td>
+        </tr>
+
+        <tr>
+          <td colspan="2" >
+            <input type="submit" value="Register"  />
+            <input type="reset" value="Clear" />
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="form-body">
+    <table>
+      <legend>Registration form</legend>
+      <tr>
+        <td><label for="firstname">First Name</label></td>
+        <td>
+          <input
+            type="text"
+            id="firstname"
+            placeholder="Enter your first name"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td><label for="lastname">Last Name</label></td>
+        <td>
+          <input type="text" id="lastname" placeholder="Enter your last name" />
+        </td>
+      </tr>
+      <tr>
+        <td><label for="email">Email</label></td>
+        <td>
+          <input type="email" id="email" placeholder="Enter your email" />
+        </td>
+      </tr>
+      <tr>
+        <td><label for="password">Password</label></td>
+        <td>
+          <input
+            type="password"
+            id="password"
+            placeholder="Enter your password"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td rowspan="2"><label>Gender</label></td>
+        <td>
+          <input type="radio" name="gender" id="female" value="female" />
+          <label for="female">Female</label>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input type="radio" name="gender" id="male" value="male" />
+          <label for="male">Male</label>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="country">country</label></td>
+        <td>
+          <select id="country">
+            <option value="">Select a Country</option>
+            <option value="egypt">Egypt</option>
+            <option value="sudan">Sudan</option>
+            <option value="libya">Libya</option>
+            <option value="italy">Italy</option>
+            <option value="sweden">Sweden</option>
+            <option value="spain">Spain</option>
+            <option value="palestine">Palestine</option>
+            <option value="south-korea">South Korea</option>
+            <option value="india">India</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="birthday">Birthday</label></td>
+        <td>
+          <input type="date" id="birthday" />
+        </td>
+      </tr>
+      <tr >
+        <td colspan="2"><label for="interests"><u>Interests</u></label></td>
+      </tr>
+      <tr>
+         <td colspan="2">
+            <label for="sports">Sports</label> 
+            <input type="checkbox" id="sports" name="sports">
+        </td>
+      <tr>
+      <tr >
+        <td colspan="2"><label for="bio"><u>Bio</u></label></td>
+      </tr>
+      <tr>
+        <td colspan="2">
+            <textarea
+              id="bio"
+              rows="4"
+              cols="30"
+              placeholder="Tell us about yourself"
+            ></textarea>
+          </td>
+      <tr>
+        <td colspan="2">
+          <button type="submit">Register</button>
+          <button type="reset">Clear</button>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

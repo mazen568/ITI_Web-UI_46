@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<style> #gender { display: flex; } </style>
+<body>
+
+    <label>Enter your name:</label>
+    <input type="text" id="nameInput"><br><br>
+
+    <label>Enter your age:</label>
+    <input type="text" id="ageInput"><br><br>
+
+    <label>Select your Gender:</label><br><br>
+
+    <div id="gender">
+        <div>
+            <img src="assets/1.jpg" width="200" height="200"><br>
+            <input type="radio" name="gender" value="male"> 
+        </div>
+    
+        <div>
+            <img src="assets/2.jpg" width="200" height="200"><br>
+            <input type="radio" name="gender" value="female"> 
+        </div>
+    </div>
+    
+    <br><br>
+
+    <label>Select your favorite color:</label>
+    <select id="colorSelect">
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+        <option value="green">Green</option>
+        <option value="yellow">Yellow</option>
+        <option value="purple">Purple</option>
+        <option value="orange">Orange</option>
+        <option value="pink">Pink</option>
+        <option value="black">Black</option>
+    </select>
+
+    <br><br>
+
+    <button id="submitBtn">register</button>
+
+    <script src="cookies.js"></script>
+    <script src="register.js"></script>
+
+</body>
+</html>

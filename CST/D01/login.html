@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body class="form-body">
+    <form action="page2.html" method="get" >
+        <fieldset>
+            <legend>Login</legend>
+            <div>
+                <label for="username">User name:</label>
+                <input
+                    type="text"
+                    placeholder="Enter user name"
+                    name="username"
+                    id="username"
+                    accesskey="n"
+                />
+            </div>
+            <div>
+                <label for="password">User password:</label>
+                <input
+                    type="password"
+                    placeholder="Enter user password"
+                    name="password"
+                    id="password"
+                    accesskey="p"
+                />
+            </div>
+            <div class="remember-section">
+                <input type="checkbox" id="remember" name="remember">
+                <label for="remember">Remember me</label>
+            </div>
+            <div class="button-container">
+                <button type="submit">Sign In</button>
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>

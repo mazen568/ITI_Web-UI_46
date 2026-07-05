@@ -1,0 +1,11 @@
+table,td{
+    border: 3px solid grey;
+    border-collapse: collapse;
+}
+td{
+    padding: 10px;
+}
+td[colspan="2"]{
+    text-align: center;   
+}
+
