@@ -1,0 +1,45 @@
+{
+  "products": [
+    {
+      "id": "3",
+      "name": "Mechanical Keyboard121312",
+      "price": 180,
+      "description": "Premium typing experience with tactile switches and RGB lighting.",
+      "category": "Accessories",
+      "imageUrl": "https://images.unsplash.com/photo-1511467687858-23d96c32e4ae?w=800&auto=format&fit=crop"
+    },
+    {
+      "id": "5",
+      "name": "Wireless Headphones",
+      "price": 40,
+      "description": "Immersive sound quality with industry-leading noise cancellation.",
+      "category": "Furniture",
+      "imageUrl": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&auto=format&fit=crop"
+    },
+    {
+      "id": "6",
+      "name": "Camera",
+      "price": 1200,
+      "description": "Professional-grade photography in a compact, portable frame.",
+      "category": "Electronics",
+      "imageUrl": "https://images.unsplash.com/photo-1510127034890-ba27508e9f1c?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    {
+      "id": "7",
+      "name": "Smartphone",
+      "price": 980,
+      "description": "Cutting-edge technology meets ultimate design simplicity.",
+      "category": "Electronics",
+      "imageUrl": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=800&auto=format&fit=crop"
+    },
+    {
+      "name": "asdasds",
+      "category": "Accessories",
+      "price": 12,
+      "imageUrl": "https://images.unsplash.com/photo-1555949963-aa79dcee981c",
+      "description": "asdassadasdasd",
+      "id": "CNU11DauC8U"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
