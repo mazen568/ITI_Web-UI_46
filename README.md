@@ -9,103 +9,57 @@
 
 ---
 
-## 🎨 Frontend Web Development & AI Courses
+## 🗣️ Languages
 
 <p>
-<img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" />
-<img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white" />
-<img src="https://img.shields.io/badge/jQuery-0769AD?style=flat-square&logo=jquery&logoColor=white" />
-<img src="https://img.shields.io/badge/Responsive_Web-38BDF8?style=flat-square&logo=css3&logoColor=white" />
-<img src="https://img.shields.io/badge/CSS_Preprocessors-CC6699?style=flat-square&logo=sass&logoColor=white" />
-<img src="https://img.shields.io/badge/Vue.js-4FC08D?style=flat-square&logo=vuedotjs&logoColor=white" />
-<img src="https://img.shields.io/badge/React.js-61DAFB?style=flat-square&logo=react&logoColor=black" />
-<img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white" />
-<img src="https://img.shields.io/badge/Material_UI-007FFF?style=flat-square&logo=mui&logoColor=white" />
-<img src="https://img.shields.io/badge/Generative_AI-412991?style=flat-square&logo=openai&logoColor=white" />
+<img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
+<img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
+<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
+<img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" />
 </p>
-
-* 🧱 **Client-Side Technologies:** HTML5 & CSS3, jQuery, Responsive Web Fundamentals, CSS Preprocessors
-* ⚛️ **Frameworks & Libraries:** Vue.js, React.js, Next.js, Material UI, Modern Responsive Web Design Frameworks
-* 🤖 **AI Integration:** Introduction to Generative AI, AI-powered coding assistant tools, Developing Gen-AI based software
 
 ---
 
-## 🟢 MEAN Stack Development
+## 🎨 Frontend
 
 <p>
-<img src="https://img.shields.io/badge/Angular-DD0031?style=flat-square&logo=angular&logoColor=white" />
-<img src="https://img.shields.io/badge/NgRx-BA2BD2?style=flat-square&logo=ngrx&logoColor=white" />
-<img src="https://img.shields.io/badge/RxJS-B7178C?style=flat-square&logo=reactivex&logoColor=white" />
-<img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white" />
-<img src="https://img.shields.io/badge/NestJS-E0234E?style=flat-square&logo=nestjs&logoColor=white" />
-<img src="https://img.shields.io/badge/NoSQL-47A248?style=flat-square&logo=mongodb&logoColor=white" />
-<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" />
-<img src="https://img.shields.io/badge/GraphQL-E10098?style=flat-square&logo=graphql&logoColor=white" />
-<img src="https://img.shields.io/badge/ES.Next-F7DF1E?style=flat-square&logo=javascript&logoColor=black" />
-<img src="https://img.shields.io/badge/PWA-5A0FC8?style=flat-square&logo=pwa&logoColor=white" />
-<img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" />
+<img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black" />
+<img src="https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white" />
+<img src="https://img.shields.io/badge/Vue.js-4FC08D?style=for-the-badge&logo=vuedotjs&logoColor=white" />
+<img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" />
+<img src="https://img.shields.io/badge/Solid.js-2C4F7C?style=for-the-badge&logo=solid&logoColor=white" />
+<img src="https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white" />
+<img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" />
+<img src="https://img.shields.io/badge/Material_UI-007FFF?style=for-the-badge&logo=mui&logoColor=white" />
+<img src="https://img.shields.io/badge/NgRx-BA2BD2?style=for-the-badge&logo=ngrx&logoColor=white" />
+<img src="https://img.shields.io/badge/RxJS-B7178C?style=for-the-badge&logo=reactivex&logoColor=white" />
+<img src="https://img.shields.io/badge/TanStack_Query-FF4154?style=for-the-badge&logo=reactquery&logoColor=white" />
+<img src="https://img.shields.io/badge/PWA-5A0FC8?style=for-the-badge&logo=pwa&logoColor=white" />
+<img src="https://img.shields.io/badge/Sass%2FLess-CC6699?style=for-the-badge&logo=sass&logoColor=white" />
 </p>
-
-* 🅰️ Angular Fundamentals
-* 🔄 Angular NgRx and Reactive RxJS
-* 🟢 Node.js Fundamentals
-* 🐈 NestJS
-* 🍃 NoSQL Database Fundamentals
-* 💛 Advanced JavaScript
-* ◈ GraphQL API
-* ⚡ ES.Next & PWA
-* 🐘 Relational Database Fundamentals
 
 ---
 
-## 🎨 UI/UX Design
+## 🟢 Backend
 
 <p>
-<img src="https://img.shields.io/badge/UI%2FUX_Design-FF61A6?style=flat-square&logo=figma&logoColor=white" />
-<img src="https://img.shields.io/badge/Wireframing-FF61A6?style=flat-square&logo=figma&logoColor=white" />
-<img src="https://img.shields.io/badge/Design_Thinking-0ACF83?style=flat-square&logo=figma&logoColor=white" />
-<img src="https://img.shields.io/badge/Photoshop-31A8FF?style=flat-square&logo=adobephotoshop&logoColor=white" />
-<img src="https://img.shields.io/badge/Illustrator-FF9A00?style=flat-square&logo=adobeillustrator&logoColor=white" />
+<img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" />
+<img src="https://img.shields.io/badge/NestJS-E0234E?style=for-the-badge&logo=nestjs&logoColor=white" />
+<img src="https://img.shields.io/badge/GraphQL-E10098?style=for-the-badge&logo=graphql&logoColor=white" />
+<img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" />
+<img src="https://img.shields.io/badge/MongoDB%2FNoSQL-47A248?style=for-the-badge&logo=mongodb&logoColor=white" />
 </p>
 
-* 🖊️ UI/UX Design Principles and Wireframing
-* ✍️ UX Writing Fundamentals
-* 💡 Design Thinking
-* 🖼️ Adobe Photoshop & Illustrator (Web)
-* 🎨 Visual Design for Web
-
 ---
 
-## 💼 Graduates Job Profiles
+## 🤖 GenAI
 
-**🟢 MEAN Stack Developer**
-* Develop websites and web applications using the MEAN stack
-* Supports JavaScript on both client and server side
-
-**🔵 MERN Stack Developer**
-* Full-stack applications using React.js (frontend), Node.js & Express.js (backend), and MongoDB (database)
-
-**🌐 Frontend Web Developer**
-* Builds the frontend portion of websites using HTML, CSS, and JavaScript
-
-**🧩 Full Stack Web Developer**
-* Builds both frontend and backend of applications using frameworks like Angular, React, Vue.js, and Node.js
-
-**🖌️ UI/UX Designer**
-* Creates positive user experiences and visually appealing interfaces
-* UX designers focus on functionality, UI designers focus on visual design
-
----
-
-## 🚀 Skills Acquired
-
-* 🌐 Web Development (Frontend & Full Stack)
-* 🟢 MEAN & MERN Stack Development
-* 🤖 Generative AI & AI-powered tools
-* 🏗️ Software Engineering Principles
-* 🗄️ Database Design & Management
-* 🔁 Agile & DevOps Practices
-* 🎨 UI/UX Design & Prototyping
+<p>
+<img src="https://img.shields.io/badge/Generative_AI-412991?style=for-the-badge&logo=openai&logoColor=white" />
+<img src="https://img.shields.io/badge/AI_Coding_Assistants-7C3AED?style=for-the-badge&logo=githubcopilot&logoColor=white" />
+<img src="https://img.shields.io/badge/RAG_%26_Agentic_AI-10A37F?style=for-the-badge&logo=anthropic&logoColor=white" />
+<img src="https://img.shields.io/badge/Vibe_Coding-FF6B6B?style=for-the-badge&logo=claude&logoColor=white" />
+</p>
 
 ---
 
