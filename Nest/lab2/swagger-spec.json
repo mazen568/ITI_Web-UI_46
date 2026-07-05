@@ -1,0 +1,317 @@
+{
+  "openapi": "3.0.0",
+  "paths": {
+    "/orders": {
+      "post": {
+        "operationId": "OrdersController_create",
+        "parameters": [],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateOrderDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "The order has been successfully created.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Order"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid input data."
+          }
+        },
+        "summary": "Create a new order",
+        "tags": [
+          "orders"
+        ]
+      },
+      "get": {
+        "operationId": "OrdersController_findAll",
+        "parameters": [
+          {
+            "name": "paymentMethod",
+            "required": false,
+            "in": "query",
+            "description": "Filter by payment method type",
+            "schema": {
+              "example": "Cash",
+              "type": "string",
+              "enum": [
+                "Cash",
+                "Visa"
+              ]
+            }
+          },
+          {
+            "name": "clientId",
+            "required": false,
+            "in": "query",
+            "description": "Filter by client owner ID",
+            "schema": {
+              "example": "1",
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "List of matching orders.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Order"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "summary": "Get all orders with optional filter options",
+        "tags": [
+          "orders"
+        ]
+      }
+    },
+    "/orders/{id}": {
+      "get": {
+        "operationId": "OrdersController_findOne",
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The found order record.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Order"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Order not found."
+          }
+        },
+        "summary": "Get an order by its ID",
+        "tags": [
+          "orders"
+        ]
+      },
+      "put": {
+        "operationId": "OrdersController_update",
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateOrderDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "The updated order record.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Order"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Order not found."
+          }
+        },
+        "summary": "Update an existing order",
+        "tags": [
+          "orders"
+        ]
+      },
+      "delete": {
+        "operationId": "OrdersController_remove",
+        "parameters": [
+          {
+            "name": "id",
+            "required": true,
+            "in": "path",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "The order record has been successfully deleted."
+          },
+          "404": {
+            "description": "Order not found."
+          }
+        },
+        "summary": "Delete an order by its ID",
+        "tags": [
+          "orders"
+        ]
+      }
+    }
+  },
+  "info": {
+    "title": "Orders API",
+    "description": "The Orders API description with TypeORM and PostgreSQL",
+    "version": "1.0",
+    "contact": {}
+  },
+  "tags": [
+    {
+      "name": "orders",
+      "description": ""
+    }
+  ],
+  "servers": [],
+  "components": {
+    "schemas": {
+      "CreateOrderDto": {
+        "type": "object",
+        "properties": {
+          "amount": {
+            "type": "number",
+            "description": "The order amount",
+            "example": 1230.5
+          },
+          "longitude": {
+            "type": "number",
+            "description": "The longitude coordinates",
+            "example": 23.21
+          },
+          "latitude": {
+            "type": "number",
+            "description": "The latitude coordinates",
+            "example": 31.01
+          },
+          "clientId": {
+            "type": "number",
+            "description": "The client owner ID",
+            "example": 1
+          },
+          "paymentMethod": {
+            "type": "string",
+            "enum": [
+              "Cash",
+              "Visa"
+            ],
+            "description": "The payment method type",
+            "example": "Visa"
+          }
+        },
+        "required": [
+          "amount",
+          "longitude",
+          "latitude",
+          "clientId",
+          "paymentMethod"
+        ]
+      },
+      "Order": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "The unique identifier (UUID) of the order"
+          },
+          "amount": {
+            "type": "number",
+            "description": "The order amount"
+          },
+          "longitude": {
+            "type": "number",
+            "description": "The longitude of location coordinate"
+          },
+          "latitude": {
+            "type": "number",
+            "description": "The latitude of location coordinate"
+          },
+          "clientId": {
+            "type": "number",
+            "description": "The ID of the client"
+          },
+          "paymentMethod": {
+            "type": "string",
+            "enum": [
+              "Cash",
+              "Visa"
+            ],
+            "description": "The payment method"
+          }
+        },
+        "required": [
+          "id",
+          "amount",
+          "longitude",
+          "latitude",
+          "clientId",
+          "paymentMethod"
+        ]
+      },
+      "UpdateOrderDto": {
+        "type": "object",
+        "properties": {
+          "amount": {
+            "type": "number",
+            "description": "The order amount"
+          },
+          "longitude": {
+            "type": "number",
+            "description": "The longitude coordinates"
+          },
+          "latitude": {
+            "type": "number",
+            "description": "The latitude coordinates"
+          },
+          "clientId": {
+            "type": "number",
+            "description": "The client owner ID"
+          },
+          "paymentMethod": {
+            "type": "string",
+            "enum": [
+              "Cash",
+              "Visa"
+            ],
+            "description": "The payment method type"
+          }
+        }
+      }
+    }
+  }
+}
